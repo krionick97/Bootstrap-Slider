@@ -1,1 +1,1 @@
-# Bootsrap-Slider
+# Bootstrap-Slider
