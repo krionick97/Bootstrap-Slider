@@ -1,0 +1,58 @@
+@import 'variables'
+
+html
+  font-size: 10px
+
+body
+  font-family: 'Open Sans', sans-serif
+  font-size: 1.5rem
+  color: $color-dark
+  position: relative
+
+// .container .row div
+//   display: block
+//   height: 20rem
+//   border: 0.1rem solid orangered
+
+.button
+  text-transform: uppercase
+  padding: 1.7rem 3rem 1.7rem
+  background-color: transparent
+  outline: none
+  border: 0.1rem solid $color-dark
+  border-radius: 0.3rem
+  &:active
+    box-shadow: inset 0 0 0.5rem 0.2rem rgba($color-black, 0.4)
+    transform: translateY(0.1rem)
+.button-main
+  background-color: $color-main
+  color: $color-white
+  border: none
+
+.container-fluid
+  padding: 0
+.test-click
+  display: none
+  &__visible
+    display: block
+    margin-top: 20rem
+    width: 10rem
+    height: 10rem
+    background-color: red
+.div-exp
+  margin-left: 2rem
+  color: $color-white
+  background-color: green
+  padding: 0.5rem
+  display: inline-block
+  &:hover
+    cursor: pointer
+.carousel-indicators
+  display: block
+// .left
+  // background-image: rgba(transparent, 1)
+
+
+@import 'preloader'
+@import 'start-screen'
+@import 'slider-section'

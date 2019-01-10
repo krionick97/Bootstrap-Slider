@@ -1,0 +1,89 @@
+.slider-section
+  // position: relative
+  // overflow: hidden
+  &__dot
+    display: flex
+    background-color: rgba($color-black, 0.4)
+    align-items: center
+    width: 100%
+    padding: 0.6rem
+    border-radius: 0.3rem
+    & > img
+      margin-right: 0.9rem
+      height: 5.6rem
+    &--text
+      color: $color-white
+      line-height: 1.4
+      font-size: 0.9rem
+      text-align: left
+      span
+        font-size: 1rem
+        font-weight: 600
+  &__carousel--indicators
+    position: absolute !important
+    margin: 0 auto
+    transform: translateX(-50%)
+    display: flex
+    width: 94rem
+    justify-content: center
+    // display: none
+    margin: 0 auto
+    &-1
+      width: 100% !important
+      margin-left: 0.5rem !important
+      margin-right: 0.5rem !important
+      transition: 0.1s !important
+      opacity: 0.6
+      // visibility: visible
+      // border: none
+    &-2
+      display: none
+    & &-1:hover, &-2:hover
+        cursor: pointer
+  &__item
+    height: 100vh
+    background-color: $color-grey
+    // overflow: hidden !important
+    & img:nth-child(1)
+      object-fit: cover 
+      height: 100vh !important
+      display: block
+      // display: none
+    & img:nth-child(2)
+      object-fit: cover 
+      height: 100vh !important
+      // display: block
+      display: none
+
+.carousel-indicators .active
+    background-color: transparent
+    opacity: 1
+
+@media (max-width: 960px)
+  .slider-section
+    &__carousel
+      &--indicators-1
+        border: 0.1rem solid #000000
+        display: inline-block
+        
+        // clip-path: circle(50% at 50% 50%)
+        // border-radius: 50%
+        width: 1.4rem !important
+        height: 1.4rem !important
+        border-radius: 0.7rem
+        & div, & p
+          display: none
+
+    &__item
+      & img:nth-child(1)
+        display: none
+      & img:nth-child(2)
+        object-fit: cover 
+        height: 100vh !important
+        display: block
+        // display: none
+    &__carousel--indicators
+      max-width: 100% 
+  .carousel-indicators .active
+      background-color: #000000
+

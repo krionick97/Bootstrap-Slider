@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Slider</title>
+</head>
+<body>
+
+    <div id="preloader" class="preloader">
+      <div class="loader"></div>
+    </div>
+  
+  <div class="start-screen">
+    <button id="start-button" class="button button-main start-screen__button">Начать демонстрацию</button>
+  </div>  
+  <!--//////////////////////////////////////////////////////////////////////////-->
+
+  <section class="slider-section">
+    <!-- <div class="container-fluid"> -->
+
+        <div id="testCarousel" class="slider-section__carousel carousel slide" data-ride="container carousel" data-interval="false">
+            <!-- Индикаторы карусели -->
+            <div class="slider-section__carousel--indicators carousel-indicators">
+              <!-- Перейти к слайду №0 с помощью соответствующего атрибута с индексом data-slide-to="0" -->
+              <div data-target="#testCarousel" data-slide-to="0" class="slider-section__carousel--indicators-1 active">
+                  <div class="slider-section__dot"><img src="img/slider_1pre.jpg" alt="Img">
+                    <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+                      <span>Этот текст добавлен для демонстрации на странице</span>
+                    </p>
+                  </div>
+              </div>
+              <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="1" -->
+              <div data-target="#testCarousel" data-slide-to="1" class="slider-section__carousel--indicators-1">
+                <div class="slider-section__dot"><img src="img/slider_2pre.jpg" alt="Img">
+                  <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+                    <span>Этот текст добавлен для демонстрации на странице</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="2" -->
+              <div data-target="#testCarousel" data-slide-to="2" class="slider-section__carousel--indicators-1">
+                <div class="slider-section__dot"><img src="img/slider_3pre.jpg" alt="Img">
+                  <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+                    <span>Этот текст добавлен для демонстрации на странице</span>
+                  </p>
+                </div>
+              </div>
+              <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="3" -->
+              <div data-target="#testCarousel" data-slide-to="3" class="slider-section__carousel--indicators-1">
+                <div class="slider-section__dot"><img src="img/slider_4pre.jpg" alt="Img">
+                  <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+                    <span>Этот текст добавлен для демонстрации на странице</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--Индикаторы карусели-->
+            <!-- <ol class="slider-section__carousel-2--indicators carousel-indicators"> -->
+              <!-- Перейти к слайду №0 с помощью соответствующего атрибута с индексом data-slide-to="0" -->
+              <!-- <li data-target="#testCarousel" data-slide-to="0" class="active"></li> -->
+              <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="1" -->
+              <!-- <li data-target="#testCarousel" data-slide-to="1"></li> -->
+              <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="2" -->
+              <!-- <li data-target="#testCarousel" data-slide-to="2"></li> -->
+              <!-- Перейти к слайду №1 с помощью соответствующего индекса data-slide-to="3" -->
+              <!-- <li data-target="#testCarousel" data-slide-to="3"></li> -->
+            <!-- </ol> -->
+          
+            <!-- Слайды карусели -->
+            <div class="carousel-inner">
+              <!-- Слайд 1 -->
+              <div class="slider-section__item item active">
+                <img src="img/slider_1.jpg" alt="...">
+                <img src="img/slider_1min.jpg" alt="...">
+                <div class="carousel-caption">
+                  <!-- Дополнительная информация слайда 1 -->
+                </div>
+              </div>
+              <!-- Слайд 2 -->
+              <div class="slider-section__item item">
+                <img src="img/slider_2.jpg" alt="...">
+                <img src="img/slider_2min.jpg" alt="...">
+                <div class="carousel-caption">
+                  <!-- Дополнительная информация слайда 2 -->
+                </div>
+              </div>
+              <!-- Слайд 3 -->
+              <div class="slider-section__item item">
+                <img src="img/slider_3.jpg" alt="...">
+                <img src="img/slider_3min.jpg" alt="...">
+                <div class="carousel-caption">
+                  <!-- Дополнительная информация слайда 3 -->
+                </div>
+              </div>
+              <!-- Слайд 4 -->
+              <div class="slider-section__item item">
+                <img src="img/slider_4.jpg" alt="...">
+                <img src="img/slider_4min.jpg" alt="...">
+                <div class="carousel-caption">
+                  <!-- Дополнительная информация слайда 3 -->
+                </div>
+              </div>
+            </div>
+          
+            <!-- Навигация карусели (следующий или предыдущий слайд) -->
+            <!-- Кнопка, переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+            <a class="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <!-- Кнопка, переход на следующий слайд с помощью атрибута data-slide="next" -->
+            <a class="right carousel-control" href="#testCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <p class="slider-section__text"><span class="slider-section__text--title">Этот текст добавлен для демонстрации на странице</span><br><span class="slider-section__text--seil">Акция действует с 01.07.18 по 31.07.18</span><span class="slider-section__text--test">Тест на внимательность</span></p>
+            <div class="slider-section__button-block">
+              <button class="button button-main">Подробнее</button>
+              <button class="button">Все акции</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"></div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <p class="slider-section__text"><span class="slider-section__text--title">Этот текст добавлен для демонстрации на странице</span><br><span class="slider-section__text--seil">Акция действует с 01.07.18 по 31.07.18</span><span class="slider-section__text--test">Тест на внимательность</span></p>
+            <div class="slider-section__button-block">
+              <button class="button button-main">Подробнее</button>
+              <button class="button">Все акции</button>
+            </div>  
+          </div>
+        </div>
+      </div>  
+  
+      <div class="container">
+        <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="slider-section__dot"><img src="img/slider_1pre.jpg" alt="Img">
+            <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+              <span>Этот текст добавлен для демонстрации на странице</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="slider-section__dot"><img src="img/slider_2pre.jpg" alt="Img">
+            <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+              <span>Этот текст добавлен для демонстрации на странице</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="slider-section__dot"><img src="img/slider_3pre.jpg" alt="Img">
+            <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+              <span>Этот текст добавлен для демонстрации на странице</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+          <div class="slider-section__dot"><img src="img/slider_4pre.jpg" alt="Img">
+            <p class="slider-section__dot--text">Акция действует с 01.07.18<br>
+              <span>Этот текст добавлен для демонстрации на странице</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      </div> -->
+  
+    <!-- </div>  -->
+
+
+
+  </section> <!--Slider Section-->
+
+  
+  
+
+
+
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!--Scritp-->
+  <script src="js/script.js"></script>
+</body>
+</html>
