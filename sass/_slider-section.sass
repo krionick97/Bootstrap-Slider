@@ -1,6 +1,9 @@
 .slider-section
-  // position: relative
+  position: relative
   // overflow: hidden
+  max-width: 192rem
+  margin: 0 auto
+  background-color: $color-grey
   &__dot
     display: flex
     background-color: rgba($color-black, 0.4)
@@ -54,7 +57,37 @@
       height: 100vh !important
       // display: block
       display: none
+  &__content
+    display: flex
+    justify-content: flex-end
+    &-block
+      text-align: left
+  &__text
+    color: $color-dark
+    max-width: 70rem
+    line-height: 1.44
+    margin-bottom: 3rem  
+    &--title
+      font-size: 4.2rem
+    &--seil
+      font-size: 2.6rem
+    &--test
+      font-size: 2.6rem
+      display: none
+  &__button-block
+    & > button
+      &:nth-child(1)
+        margin-right: 1rem
+      &:nth-child(2)
+        margin-left: 1rem
 
+.carousel-caption
+  width: 70%
+  position: absolute
+  top: 30%
+  left: 50%
+  transform: translateY(-50%)
+  transform: translateX(-50%)
 .carousel-indicators .active
     background-color: transparent
     opacity: 1
@@ -73,6 +106,17 @@
         border-radius: 0.7rem
         & div, & p
           display: none
+    &__content
+      display: flex
+      justify-content: center
+      &-block
+        text-align: center
+    &__text
+      &--seil
+        display: none
+      &--test
+        font-size: 2.6rem
+        display: block
 
     &__item
       & img:nth-child(1)
@@ -86,4 +130,39 @@
       max-width: 100% 
   .carousel-indicators .active
       background-color: #000000
+  .carousel-control
+    display: none
+.carousel-caption
+  width: 90%
+
+@media (max-width: 630px)
+  .slider-section
+    &__text
+      line-height: 1.2
+      &--title
+        font-size: 3rem
+        // margin-bottom: 4rem
+
+@media (max-width: 460px)
+  .slider-section
+    &__text
+      line-height: 1.2
+      &--title
+        font-size: 2.6rem
+      &--test
+        font-size: 1.8rem
+
+@media (max-width: 400px)
+  .slider-section
+    &__button-block
+      & > button
+        &:nth-child(1)
+          margin: 0 auto 2rem
+          display: block
+        &:nth-child(2)
+          margin: 0 auto
+          display: block
+
+
+
 

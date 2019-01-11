@@ -7,6 +7,7 @@ body {
   font-size: 1.5rem;
   color: #212121;
   position: relative;
+  background-color: #c9d0da;
 }
 
 .button {
@@ -16,6 +17,7 @@ body {
   outline: none;
   border: 0.1rem solid #212121;
   border-radius: 0.3rem;
+  color: #212121;
 }
 
 .button:active {
@@ -141,6 +143,14 @@ body {
   top: 0;
   left: 0;
   z-index: 50;
+  display: none;
+}
+
+.slider-section {
+  position: relative;
+  max-width: 192rem;
+  margin: 0 auto;
+  background-color: #c9d0da;
 }
 
 .slider-section__dot {
@@ -224,6 +234,58 @@ body {
   display: none;
 }
 
+.slider-section__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.slider-section__content-block {
+  text-align: left;
+}
+
+.slider-section__text {
+  color: #212121;
+  max-width: 70rem;
+  line-height: 1.44;
+  margin-bottom: 3rem;
+}
+
+.slider-section__text--title {
+  font-size: 4.2rem;
+}
+
+.slider-section__text--seil {
+  font-size: 2.6rem;
+}
+
+.slider-section__text--test {
+  font-size: 2.6rem;
+  display: none;
+}
+
+.slider-section__button-block > button:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.slider-section__button-block > button:nth-child(2) {
+  margin-left: 1rem;
+}
+
+.carousel-caption {
+  width: 70%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .carousel-indicators .active {
   background-color: transparent;
   opacity: 1;
@@ -240,6 +302,24 @@ body {
   .slider-section__carousel--indicators-1 div, .slider-section__carousel--indicators-1 p {
     display: none;
   }
+  .slider-section__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider-section__content-block {
+    text-align: center;
+  }
+  .slider-section__text--seil {
+    display: none;
+  }
+  .slider-section__text--test {
+    font-size: 2.6rem;
+    display: block;
+  }
   .slider-section__item img:nth-child(1) {
     display: none;
   }
@@ -254,6 +334,45 @@ body {
   }
   .carousel-indicators .active {
     background-color: #000000;
+  }
+  .carousel-control {
+    display: none;
+  }
+}
+
+.carousel-caption {
+  width: 90%;
+}
+
+@media (max-width: 630px) {
+  .slider-section__text {
+    line-height: 1.2;
+  }
+  .slider-section__text--title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .slider-section__text {
+    line-height: 1.2;
+  }
+  .slider-section__text--title {
+    font-size: 2.6rem;
+  }
+  .slider-section__text--test {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider-section__button-block > button:nth-child(1) {
+    margin: 0 auto 2rem;
+    display: block;
+  }
+  .slider-section__button-block > button:nth-child(2) {
+    margin: 0 auto;
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
